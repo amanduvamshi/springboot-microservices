@@ -1,0 +1,29 @@
+HandlerMapping : Interface to be implemented by objects that define a mapping between and handler objects
+   1.BeanNameUrlHandlerMapping
+   2.RequestMappingHandlerMapping
+   
+HandlerExecutionChain : Handler execution chain, consisting of handler object and any handler interceptors.
+
+HandlerAdapter : To handle the request.
+
+Annotation : https://en.wikipedia.org/wiki/Java_annotation
+
+@RestController 
+
+@Requestbody 
+
+@ResponseBody
+
+@RequestMapping
+
+@PostMapping
+
+@ComponentScan
+
+
+map.put("/user","com.krishna.UserController#createUser")
+
+map.get("/user")
+
+
+   
