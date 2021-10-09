@@ -4,16 +4,20 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.krishna.dao.UserDAO;
+import com.krishna.dao.UserRespository;
 import com.krishna.model.User;
 
 @Service
 public class UserService {
 	
+	
 	@Autowired
-	private UserDAO userDao;
+	private  UserRespository userRepositroy;
 
-	public String createUser(User user) {
-		return userDao.createUser(user);
+	public User createUser(User user) {
+		System.out.println("User Repo..."+userRepositroy);
+		userRepositroy.save(user);
+		return userRepositroy.save(user);
 	}
 
 }

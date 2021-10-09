@@ -1,8 +1,18 @@
 package com.krishna.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "User_Info")
 public class User {
 	
+	@Column
+	@Id
 	private String email;
+	@Column
 	private String password;
 	public String getEmail() {
 		return email;

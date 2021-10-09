@@ -21,9 +21,17 @@ Annotation : https://en.wikipedia.org/wiki/Java_annotation
 @ComponentScan
 
 
-map.put("/user","com.krishna.UserController#createUser")
+Repository steps:
 
-map.get("/user")
+1.pom.xml    +spring data jpa repositroy
+2.application.porpeties   configure db info
+3.create entity(@entiry, @table, @id , @column)
+4.scan entity packages(@EntityScan("com.krishna"))
+5. Enable jpa repositories(@EnableJpaRepositories("com.krishna.dao")
+6.Implement Repository
+@Repository
+public interface UserRespository extends CrudRepository<User, String> 
+
 
 
    
