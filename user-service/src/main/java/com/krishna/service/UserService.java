@@ -19,5 +19,18 @@ public class UserService {
 		userRepositroy.save(user);
 		return userRepositroy.save(user);
 	}
+	
+	public String authenticate(User user) {
+		//Line Db call...
+		String userType =user.getUserType();
+		if(userType == null) {
+			userType="Customer";
+		}
+		if(userType.equals("Admin")) {
+			return "Admin Home Page.";
+		}
+		
+		return "Customer Home Page";
+	}
 
 }

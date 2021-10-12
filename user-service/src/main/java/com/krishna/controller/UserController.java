@@ -29,5 +29,12 @@ public class UserController {
 		//userDto.setMessage(message);
 		return new ResponseEntity<User>(response, null, 200);
 	}
+	
+	@PostMapping("/login")
+	public String authenticate(@RequestBody User user) {
+		// Step 1: get user info based on userName and password
+		//  step 2: if record exists based on userType return home page. 
+		return null;
+	}
 
 }
