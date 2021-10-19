@@ -20,6 +20,9 @@ Annotation : https://en.wikipedia.org/wiki/Java_annotation
 
 @ComponentScan
 
+@ControllerAdivce
+
+@Exceptionhandler
 
 Repository steps:
 
